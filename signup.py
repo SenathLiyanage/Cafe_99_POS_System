@@ -133,80 +133,80 @@ signup_window.title('Signup Page')
 signup_window.resizable(0,0)
 
 # ImageTk class use for jpg files
-background = ImageTk.PhotoImage(file='BGimage.jpg')
-signup_window.geometry('992x613+250+100')
+background = ImageTk.PhotoImage(file='MainBG.jpg')
+signup_window.geometry('1100x700+200+50')
 bgLabel = Label(signup_window, image=background)
 bgLabel.place(x=0,y=0)
 
 # background color
-Headbg = "#D3CAB3"
+Headbg = "#1E1E1E"
 # font color
 Headfg = "#2C2723"
 
-heading=Label(signup_window,text='CREATE ACCOUNT',font=('Gilroy',20,'bold'),bg=Headbg, fg=Headfg)
-heading.place(x=200,y=110)
+heading=Label(signup_window,text='CREATE ACCOUNT',font=('Gilroy',30,'bold'),bg=Headbg, fg='snow')
+heading.place(x=115,y=90)
 
 # email entry
-emailEntry = Entry(signup_window, width=28, font=('Gilroy',11,'bold'), bd=0, fg=Headfg, bg=Headbg)
-emailEntry.place(x=210,y=180)
+emailEntry = Entry(signup_window, width=25, font=('Gilroy',17,'bold'), bd=0, fg='snow', bg=Headbg)
+emailEntry.place(x=130,y=180)
 # add pre-instructions
 emailEntry.insert(0,'Email')
 # usernameEntry bind to 'on_enter' function using bind() method
 emailEntry.bind('<FocusIn>',email_enter)
 emailEntry.bind('<FocusOut>',email_not_enter)
 # crete a frame to the user name entry
-Frame(signup_window,width=258,height=2,bg=Headfg).place(x=210,y=202)
+Frame(signup_window,width=350,height=2,bg='snow').place(x=125,y=215)
 
 # user name entry
-usernameEntry = Entry(signup_window, width=28, font=('Gilroy',11,'bold'), bd=0, fg=Headfg, bg=Headbg)
-usernameEntry.place(x=210,y=230)
+usernameEntry = Entry(signup_window, width=25, font=('Gilroy',17,'bold'), bd=0, fg='snow', bg=Headbg)
+usernameEntry.place(x=130,y=255)
 # add pre-instructions
 usernameEntry.insert(0,'User Name')
 # usernameEntry bind to 'on_enter' function using bind() method
 usernameEntry.bind('<FocusIn>',un_enter)
 usernameEntry.bind('<FocusOut>',un_not_enter)
 # crete a frame to the user name entry
-Frame(signup_window,width=258,height=2,bg=Headfg).place(x=210,y=252)
+Frame(signup_window,width=350,height=2,bg='snow').place(x=125,y=285)
 
 # password entry
-passwordEntry = Entry(signup_window, width=28, font=('Gilroy',11,'bold'), bd=0, fg=Headfg, bg=Headbg)
-passwordEntry.place(x=210,y=280)
+passwordEntry = Entry(signup_window, width=25, font=('Gilroy',17,'bold'), bd=0, fg='snow', bg=Headbg)
+passwordEntry.place(x=130,y=330)
 # add pre-instructions
 passwordEntry.insert(0,'Password')
 # usernameEntry bind to 'on_enter' function using bind() method
 passwordEntry.bind('<FocusIn>',pw_enter)
 passwordEntry.bind('<FocusOut>',pw_not_enter)
 # crete a frame to the password entry
-Frame(signup_window,width=258,height=2,bg=Headfg).place(x=210,y=302)
+Frame(signup_window,width=350,height=2,bg='snow').place(x=125,y=365)
 
 # c_password entry
-c_passwordEntry = Entry(signup_window, width=28, font=('Gilroy',11,'bold'), bd=0, fg=Headfg, bg=Headbg)
-c_passwordEntry.place(x=210,y=330)
+c_passwordEntry = Entry(signup_window, width=25, font=('Gilroy',17,'bold'), bd=0, fg='snow', bg=Headbg)
+c_passwordEntry.place(x=130,y=405)
 # add pre-instructions
 c_passwordEntry.insert(0,'Confirm Password')
 # usernameEntry bind to 'on_enter' function using bind() method
 c_passwordEntry.bind('<FocusIn>',c_pw_enter)
 c_passwordEntry.bind('<FocusOut>',c_pw_not_enter)
 # crete a frame to the password entry
-Frame(signup_window,width=258,height=2,bg=Headfg).place(x=210,y=352)
+Frame(signup_window,width=350,height=2,bg='snow').place(x=125,y=435)
 
 # when the box is checked, 'check' variable will get '1' otherwise get '0'
 check=IntVar()
 # 'checkbutton()' class will create a check button
-t_c_checkButton = Checkbutton(signup_window, text="I agree to the Terms & Conditions", font=('Gilroy',8,'bold'),fg=Headfg, bg=Headbg, activebackground=Headbg, activeforeground='NavajoWhite4', cursor='hand2', variable=check)
+t_c_checkButton = Checkbutton(signup_window, text="I agree to the Terms & Conditions", font=('Gilroy',10,'bold'),fg='snow', bg=Headbg, activebackground=Headbg, activeforeground='NavajoWhite4', cursor='hand2', variable=check)
 # terms & conditions label
 #t_c_Label=Label(signup_window, text="I agree to the Terms & Conditions", font=('Gilroy',8,'bold'), fg=Headfg, bg=Headbg)
-t_c_checkButton.place(x=210,y=375)
+t_c_checkButton.place(x=130,y=460)
 
 # signup button
 # when clicking signup button the data should store inside the database
-signupButton = Button(signup_window,text='Sign Up',font=('Gilroy',16,'bold'), bd=0, width=18, bg=Headfg, fg=Headbg, activebackground='NavajoWhite4', activeforeground=Headbg, cursor='hand2', command=connect_db)
-signupButton.place(x=218,y=420)
+signupButton = Button(signup_window,text='Sign Up',font=('Gilroy',16,'bold'), bd=0, width=18, bg='snow', fg=Headbg, activebackground='NavajoWhite4', activeforeground=Headbg, cursor='hand2', command=connect_db)
+signupButton.place(x=180,y=520)
 
 # have account label
-have_account_Label=Label(signup_window, text="Already have an account?", font=('Gilroy',8,'bold'), fg=Headfg, bg=Headbg)
-have_account_Label.place(x=240,y=485)
-have_account_Button = Button(signup_window,text='Log In', font=('Gilroy',8,'bold'), bd=0, bg=Headbg, fg='red', activebackground=Headbg, activeforeground='NavajoWhite4', cursor='hand2', command=direct_login)
-have_account_Button.place(x=390,y=485)
+have_account_Label=Label(signup_window, text="Already have an account?", font=('Gilroy',10,'bold'), fg='snow', bg=Headbg)
+have_account_Label.place(x=185,y=600)
+have_account_Button = Button(signup_window,text='Log In', font=('Gilroy',10,'bold'), bd=0, bg=Headbg, fg='red', activebackground=Headbg, activeforeground='NavajoWhite4', cursor='hand2', command=direct_login)
+have_account_Button.place(x=360,y=600)
 
 signup_window.mainloop()
