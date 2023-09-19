@@ -88,52 +88,52 @@ Frame(dash_window,width=158,height=2,bg='snow').place(x=0,y=590)
 # ------product category buttons------
 
 # Burger button
-bunLogo = PhotoImage(file='Bun.png')
-bunButton = Button(dash_window,image=bunLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg='snow', fg='snow', activebackground=Headbg, activeforeground=Headbg, cursor='hand2')
-bunButton.place(x=200,y=30)
+bunLogo = PhotoImage(file='Burger.png')
+bunButton = Button(dash_window,image=bunLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg=Headbg, fg='snow', activebackground=ButtonBG, activeforeground=Headbg, cursor='hand2')
+bunButton.place(x=200,y=25)
 # bun label
 bunLabel=Label(dash_window, text='Burger', font=('Gilroy',12,'bold'),width=10, fg='snow', bg=Headbg)
-bunLabel.place(x=200,y=130)
+bunLabel.place(x=200,y=125)
 
 # hotdog button
 hotdogLogo = PhotoImage(file='hotdog.png')
-hotdogButton = Button(dash_window,image=hotdogLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg='snow', fg='snow', activebackground=Headbg, activeforeground=Headbg, cursor='hand2')
-hotdogButton.place(x=350,y=30)
+hotdogButton = Button(dash_window,image=hotdogLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg=Headbg, fg='snow', activebackground=ButtonBG, activeforeground=Headbg, cursor='hand2')
+hotdogButton.place(x=350,y=25)
 # hotdog label
-hotdogLabel=Label(dash_window, text='Shorts', font=('Gilroy',12,'bold'),width=10, fg='snow', bg=Headbg)
-hotdogLabel.place(x=350,y=130)
+hotdogLabel=Label(dash_window, text='Short-eats', font=('Gilroy',12,'bold'),width=10, fg='snow', bg=Headbg)
+hotdogLabel.place(x=350,y=125)
 
 # meal button
-mealLogo = PhotoImage(file='Meal.png')
-mealButton = Button(dash_window,image=mealLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg='snow', fg='snow', activebackground=Headbg, activeforeground=Headbg, cursor='hand2')
-mealButton.place(x=500,y=30)
+mealLogo = PhotoImage(file='Biriyani.png')
+mealButton = Button(dash_window,image=mealLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg=Headbg, fg='snow', activebackground=ButtonBG, activeforeground=Headbg, cursor='hand2')
+mealButton.place(x=500,y=25)
 # meal label
 mealLabel=Label(dash_window, text='Meals', font=('Gilroy',12,'bold'),width=10, fg='snow', bg=Headbg)
-mealLabel.place(x=500,y=130)
+mealLabel.place(x=500,y=125)
 
 # icecream button
-icecreamLogo = PhotoImage(file='IceCream.png')
-icecreamButton = Button(dash_window,image=icecreamLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg='snow', fg='snow', activebackground=Headbg, activeforeground=Headbg, cursor='hand2')
-icecreamButton.place(x=650,y=30)
+icecreamLogo = PhotoImage(file='Ice Cream.png')
+icecreamButton = Button(dash_window,image=icecreamLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg=Headbg, fg='snow', activebackground=ButtonBG, activeforeground=Headbg, cursor='hand2')
+icecreamButton.place(x=650,y=25)
 # icecream label
 icecreamLabel=Label(dash_window, text='Ice Cream', font=('Gilroy',12,'bold'),width=10, fg='snow', bg=Headbg)
-icecreamLabel.place(x=650,y=130)
+icecreamLabel.place(x=650,y=125)
 
 # drinks button
 drinksLogo = PhotoImage(file='Drinks.png')
-drinksButton = Button(dash_window,image=drinksLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg='snow', fg='snow', activebackground=Headbg, activeforeground=Headbg, cursor='hand2')
-drinksButton.place(x=800,y=30)
+drinksButton = Button(dash_window,image=drinksLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg=Headbg, fg='snow', activebackground=ButtonBG, activeforeground=Headbg, cursor='hand2')
+drinksButton.place(x=800,y=25)
 # drinks label
 drinksLabel=Label(dash_window, text='Drinks', font=('Gilroy',12,'bold'),width=10, fg='snow', bg=Headbg)
-drinksLabel.place(x=800,y=130)
+drinksLabel.place(x=800,y=125)
 
 # other button
 otherLogo = PhotoImage(file='Snacks.png')
-otherButton = Button(dash_window,image=otherLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg='snow', fg='snow', activebackground=Headbg, activeforeground=Headbg, cursor='hand2')
-otherButton.place(x=950,y=30)
+otherButton = Button(dash_window,image=otherLogo,font=('Gilroy',16,'bold'), width=100,height=100, bd=0, bg=Headbg, fg='snow', activebackground=ButtonBG, activeforeground=Headbg, cursor='hand2')
+otherButton.place(x=950,y=25)
 # other label
 otherLabel=Label(dash_window, text='Other', font=('Gilroy',12,'bold'),width=10, fg='snow', bg=Headbg)
-otherLabel.place(x=950,y=130)
+otherLabel.place(x=950,y=125)
 
 
 # -----------Products-----------
@@ -141,19 +141,19 @@ otherLabel.place(x=950,y=130)
 productsLabel = Label(dash_window, text='Choose Oder', font=('Gilroy',15,'bold'), bd=0, relief=GROOVE, bg=Headbg, fg='snow')
 productsLabel.place(x=180,y=180)
 
-#productsFrame = Frame(dash_window, bd=2, relief=GROOVE)
-#productsFrame.place(x=180,y=220)
-
-# to add a scrollbar, use 'Scrollbar()' class. Use orient to to make vertical or horizontal scrollbar
+# use Canvas() method to place the scrollbar to add items
 wrapper1 = LabelFrame(dash_window)
 mycanvas = Canvas(wrapper1, width=450, height=460, bg='snow')
 mycanvas.pack(side=LEFT, fill="both", expand="yes")
 
-scrollbar = ttk.Scrollbar(wrapper1, orient="vertical",command=mycanvas.yview)
+# to add a scrollbar, use 'Scrollbar()' class. Use orient to to make vertical or horizontal scrollbar
+scrollbar = ttk.Scrollbar(wrapper1, orient="vertical", command=mycanvas.yview)
 scrollbar.pack(side=RIGHT, fill=Y)
 
 mycanvas.configure(yscrollcommand=scrollbar.set)
 mycanvas.bind('<Configure>', lambda e: mycanvas.configure(scrollregion = mycanvas.bbox('all')))
+
+# canvas frames
 
 burgerframe = Frame(mycanvas)
 mycanvas.create_window((0,0), window=burgerframe, anchor="nw")
@@ -162,13 +162,19 @@ shortsframe = Frame(mycanvas)
 mycanvas.create_window((0,300), window=shortsframe, anchor="nw")
 
 mealsframe = Frame(mycanvas)
-mycanvas.create_window((0,600), window=mealsframe, anchor="nw")
+mycanvas.create_window((0,680), window=mealsframe, anchor="nw")
 
 normal_icecreamframe = Frame(mycanvas)
-mycanvas.create_window((0,815), window=normal_icecreamframe, anchor="nw")
+mycanvas.create_window((0,895), window=normal_icecreamframe, anchor="nw")
 
 magic_icecreamframe = Frame(mycanvas)
-mycanvas.create_window((0,1110), window=magic_icecreamframe, anchor="nw")
+mycanvas.create_window((0,1190), window=magic_icecreamframe, anchor="nw")
+
+drinks_frame = Frame(mycanvas)
+mycanvas.create_window((0,2780), window=drinks_frame, anchor="nw")
+
+other_frame = Frame(mycanvas)
+mycanvas.create_window((0,2980), window=other_frame, anchor="nw")
 
 wrapper1.place(x=180,y=220)
 
@@ -205,53 +211,53 @@ cheese_burger_Button.grid(row=3,column=2)
 short_eats_title_label = Label(shortsframe, text='  SHORT EATS', font=('Gilroy',13,'bold'), justify="left", anchor="w", width=45, height=2, bd=0, relief=GROOVE, bg='snow', fg='gray')
 short_eats_title_label.grid(row=0, column=0, columnspan=3, sticky=W)
 
-fish_bun_Logo = PhotoImage(file='Bun.png')
-fish_bun_Button = Button(shortsframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
-fish_bun_Button.grid(row=1,column=0)
+hotdog_Logo = PhotoImage(file='hotdog.png')
+hotdog_Button = Button(shortsframe,image=hotdogLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+hotdog_Button.grid(row=1,column=0)
+hotdog_Button = Button(shortsframe, text='Hotdog', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+hotdog_Button.grid(row=1,column=1)
+hotdog_Button = Button(shortsframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+hotdog_Button.grid(row=1,column=2)
+
+fish_bun_Logo = PhotoImage(file='fish bun.png')
+fish_bun_Button = Button(shortsframe,image=fish_bun_Logo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+fish_bun_Button.grid(row=2,column=0)
 fish_bun_Button = Button(shortsframe, text='Fish Bun', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
-fish_bun_Button.grid(row=1,column=1)
+fish_bun_Button.grid(row=2,column=1)
 fish_bun_Button = Button(shortsframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
-fish_bun_Button.grid(row=1,column=2)
+fish_bun_Button.grid(row=2,column=2)
 
-pastry_Logo = PhotoImage(file='Bun.png')
-pastry_Button = Button(shortsframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
-pastry_Button.grid(row=2,column=0)
+pastry_Logo = PhotoImage(file='pastry.png')
+pastry_Button = Button(shortsframe,image=pastry_Logo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+pastry_Button.grid(row=3,column=0)
 pastry_Button = Button(shortsframe, text='Pastry', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
-pastry_Button.grid(row=2,column=1)
+pastry_Button.grid(row=3,column=1)
 pastry_Button = Button(shortsframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
-pastry_Button.grid(row=2,column=2)
+pastry_Button.grid(row=3,column=2)
 
-egg_bun_Logo = PhotoImage(file='Bun.png')
-egg_bun_Button = Button(shortsframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
-egg_bun_Button.grid(row=3,column=0)
+egg_bun_Logo = PhotoImage(file='eggbun.png')
+egg_bun_Button = Button(shortsframe,image=egg_bun_Logo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+egg_bun_Button.grid(row=4,column=0)
 egg_bun_Button = Button(shortsframe, text='Egg Bun', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
-egg_bun_Button.grid(row=3,column=1)
+egg_bun_Button.grid(row=4,column=1)
 egg_bun_Button = Button(shortsframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
-egg_bun_Button.grid(row=3,column=2)
-
-sossaje_bun_Logo = PhotoImage(file='Bun.png')
-sossaje_bun_Button = Button(shortsframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
-sossaje_bun_Button.grid(row=4,column=0)
-sossaje_bun_Button = Button(shortsframe, text='Sossaje Bun', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
-sossaje_bun_Button.grid(row=4,column=1)
-sossaje_bun_Button = Button(shortsframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
-sossaje_bun_Button.grid(row=4,column=2)
+egg_bun_Button.grid(row=4,column=2)
 
 # meals section
 
 meals_title_label = Label(mealsframe, text='  MEALS', font=('Gilroy',13,'bold'), justify="left", anchor="w", width=45, height=2, bd=0, relief=GROOVE, bg='snow', fg='gray')
 meals_title_label.grid(row=0, column=0, columnspan=3, sticky=W)
 
-vegi_meal_Logo = PhotoImage(file='Bun.png')
-vegi_meal_Button = Button(mealsframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+vegi_meal_Logo = PhotoImage(file='Biriyani.png')
+vegi_meal_Button = Button(mealsframe,image=vegi_meal_Logo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
 vegi_meal_Button.grid(row=1,column=0)
 vegi_meal_Button = Button(mealsframe, text='Vegi Meal', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
 vegi_meal_Button.grid(row=1,column=1)
 vegi_meal_Button = Button(mealsframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
 vegi_meal_Button.grid(row=1,column=2)
 
-chicken_meal_Logo = PhotoImage(file='Bun.png')
-chicken_meal_Button = Button(mealsframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+chicken_meal_Logo = PhotoImage(file='Biriyani.png')
+chicken_meal_Button = Button(mealsframe,image=chicken_meal_Logo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
 chicken_meal_Button.grid(row=2,column=0)
 chicken_meal_Button = Button(mealsframe, text='Chicken Meal', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
 chicken_meal_Button.grid(row=2,column=1)
@@ -292,31 +298,216 @@ strawberry_icecream_Button.grid(row=3,column=2)
 magic_ice_cream_label = Label(magic_icecreamframe, text='  MAGIC ICE-CREAM', font=('Gilroy',13,'bold'), justify="left", anchor="w", width=45, height=2, bd=0, relief=GROOVE, bg='snow', fg='gray')
 magic_ice_cream_label.grid(row=0, column=0, columnspan=3, sticky=W)
 
-strawberry_icecream_Logo = PhotoImage(file='Bun.png')
-strawberry_icecream_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
-strawberry_icecream_Button.grid(row=1,column=0)
-strawberry_icecream_Button = Button(magic_icecreamframe, text='Strawberry Ice-Cream', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
-strawberry_icecream_Button.grid(row=1,column=1)
-strawberry_icecream_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
-strawberry_icecream_Button.grid(row=1,column=2)
+faluda_stick_Logo = PhotoImage(file='Bun.png')
+faluda_stick_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+faluda_stick_Button.grid(row=1,column=0)
+faluda_stick_Button = Button(magic_icecreamframe, text='Faluda Stick', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+faluda_stick_Button.grid(row=1,column=1)
+faluda_stick_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+faluda_stick_Button.grid(row=1,column=2)
+
+fantasticstick_chocolate_Logo = PhotoImage(file='Bun.png')
+fantasticstick_chocolate_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+fantasticstick_chocolate_Button.grid(row=2,column=0)
+fantasticstick_chocolate_Button = Button(magic_icecreamframe, text='Fantasticstick-Chocolate', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+fantasticstick_chocolate_Button.grid(row=2,column=1)
+fantasticstick_chocolate_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+fantasticstick_chocolate_Button.grid(row=2,column=2)
+
+cool_berry_Logo = PhotoImage(file='Bun.png')
+cool_berry_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+cool_berry_Button.grid(row=3,column=0)
+cool_berry_Button = Button(magic_icecreamframe, text='Cool Berry', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+cool_berry_Button.grid(row=3,column=1)
+cool_berry_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+cool_berry_Button.grid(row=3,column=2)
+
+divul_magic_stick_Logo = PhotoImage(file='Bun.png')
+divul_magic_stick_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+divul_magic_stick_Button.grid(row=4,column=0)
+divul_magic_stick_Button = Button(magic_icecreamframe, text='Divul Magic Stick', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+divul_magic_stick_Button.grid(row=4,column=1)
+divul_magic_stick_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+divul_magic_stick_Button.grid(row=4,column=2)
+
+magic_choc_chocolate_Logo = PhotoImage(file='Bun.png')
+magic_choc_chocolate_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+magic_choc_chocolate_Button.grid(row=5,column=0)
+magic_choc_chocolate_Button = Button(magic_icecreamframe, text='Magic Choc-Chocolate', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+magic_choc_chocolate_Button.grid(row=5,column=1)
+magic_choc_chocolate_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+magic_choc_chocolate_Button.grid(row=5,column=2)
+
+traffic_light_stick_Logo = PhotoImage(file='Bun.png')
+traffic_light_stick_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+traffic_light_stick_Button.grid(row=6,column=0)
+traffic_light_stick_Button = Button(magic_icecreamframe, text='Traffic Light Stick', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+traffic_light_stick_Button.grid(row=6,column=1)
+traffic_light_stick_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+traffic_light_stick_Button.grid(row=6,column=2)
+
+magic_caramel_bar_Logo = PhotoImage(file='Bun.png')
+magic_caramel_bar_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+magic_caramel_bar_Button.grid(row=7,column=0)
+magic_caramel_bar_Button = Button(magic_icecreamframe, text='Magic Caramel Bar', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+magic_caramel_bar_Button.grid(row=7,column=1)
+magic_caramel_bar_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+magic_caramel_bar_Button.grid(row=7,column=2)
+
+magic_cube_Logo = PhotoImage(file='Bun.png')
+magic_cube_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+magic_cube_Button.grid(row=8,column=0)
+magic_cube_Button = Button(magic_icecreamframe, text='Magic Cube', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+magic_cube_Button.grid(row=8,column=1)
+magic_cube_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+magic_cube_Button.grid(row=8,column=2)
+
+vanila_magic_Logo = PhotoImage(file='Bun.png')
+vanila_magic_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+vanila_magic_Button.grid(row=9,column=0)
+vanila_magic_Button = Button(magic_icecreamframe, text='Vanila Magic', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+vanila_magic_Button.grid(row=9,column=1)
+vanila_magic_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+vanila_magic_Button.grid(row=9,column=2)
+
+kithul_magic_Logo = PhotoImage(file='Bun.png')
+kithul_magic_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+kithul_magic_Button.grid(row=10,column=0)
+kithul_magic_Button = Button(magic_icecreamframe, text='Kithul Magic', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+kithul_magic_Button.grid(row=10,column=1)
+kithul_magic_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+kithul_magic_Button.grid(row=10,column=2)
+
+vanila_chock_mix_Logo = PhotoImage(file='Bun.png')
+vanila_chock_mix_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+vanila_chock_mix_Button.grid(row=11,column=0)
+vanila_chock_mix_Button = Button(magic_icecreamframe, text='Vanila Chock-Mix', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+vanila_chock_mix_Button.grid(row=11,column=1)
+vanila_chock_mix_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+vanila_chock_mix_Button.grid(row=11,column=2)
+
+fruit_and_nut_cup_Logo = PhotoImage(file='Bun.png')
+fruit_and_nut_cup_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+fruit_and_nut_cup_Button.grid(row=12,column=0)
+fruit_and_nut_cup_Button = Button(magic_icecreamframe, text='Fruit & Nut-Cup', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+fruit_and_nut_cup_Button.grid(row=12,column=1)
+fruit_and_nut_cup_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+fruit_and_nut_cup_Button.grid(row=12,column=2)
+
+chocolate_magic_Logo = PhotoImage(file='Bun.png')
+chocolate_magic_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+chocolate_magic_Button.grid(row=13,column=0)
+chocolate_magic_Button = Button(magic_icecreamframe, text='Chocolate Magic', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+chocolate_magic_Button.grid(row=13,column=1)
+chocolate_magic_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+chocolate_magic_Button.grid(row=13,column=2)
+
+magic_cone_chocolate_Logo = PhotoImage(file='Bun.png')
+magic_cone_chocolate_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+magic_cone_chocolate_Button.grid(row=14,column=0)
+magic_cone_chocolate_Button = Button(magic_icecreamframe, text='Magic Cone-Chocolate', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+magic_cone_chocolate_Button.grid(row=14,column=1)
+magic_cone_chocolate_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+magic_cone_chocolate_Button.grid(row=14,column=2)
+
+magic_cone_vanila_Logo = PhotoImage(file='Bun.png')
+magic_cone_vanila_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+magic_cone_vanila_Button.grid(row=15,column=0)
+magic_cone_vanila_Button = Button(magic_icecreamframe, text='Magic Cone-Vanila', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+magic_cone_vanila_Button.grid(row=15,column=1)
+magic_cone_vanila_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+magic_cone_vanila_Button.grid(row=15,column=2)
+
+heavenly_crunch_cone_Logo = PhotoImage(file='Bun.png')
+heavenly_crunch_cone_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+heavenly_crunch_cone_Button.grid(row=16,column=0)
+heavenly_crunch_cone_Button = Button(magic_icecreamframe, text='Heavenly Crunch Cone', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+heavenly_crunch_cone_Button.grid(row=16,column=1)
+heavenly_crunch_cone_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+heavenly_crunch_cone_Button.grid(row=16,column=2)
+
+fruit_and_nut_cone_Logo = PhotoImage(file='Bun.png')
+fruit_and_nut_cone_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+fruit_and_nut_cone_Button.grid(row=17,column=0)
+fruit_and_nut_cone_Button = Button(magic_icecreamframe, text='Fruit & Nut Cone', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+fruit_and_nut_cone_Button.grid(row=17,column=1)
+fruit_and_nut_cone_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+fruit_and_nut_cone_Button.grid(row=17,column=2)
+
+cappuccino_cone_Logo = PhotoImage(file='Bun.png')
+cappuccino_cone_Button = Button(magic_icecreamframe,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+cappuccino_cone_Button.grid(row=18,column=0)
+cappuccino_cone_Button = Button(magic_icecreamframe, text='Cappuccino Cone', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+cappuccino_cone_Button.grid(row=18,column=1)
+cappuccino_cone_Button = Button(magic_icecreamframe,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+cappuccino_cone_Button.grid(row=18,column=2)
 
 
+# drinks section
 
-#l1=Listbox(productsFrame,height=29,width=60, bg='yellow',yscrollcommand=scrollbar.set)
-#l1.pack(side=LEFT,padx=15)
-# to create a text area, use 'text()' class. To set the scrollbar with the text area, use 'yscrollcommand=scrollbar.set' command.
-#productarea = Text(productsFrame, height=29, width=55, bg=Headbg, yscrollcommand=scrollbar.set)
-#productarea.pack()
+drinks_label = Label(drinks_frame, text='  Drinks', font=('Gilroy',13,'bold'), justify="left", anchor="w", width=45, height=2, bd=0, relief=GROOVE, bg='snow', fg='gray')
+drinks_label.grid(row=0, column=0, columnspan=3, sticky=W)
 
+water_Logo = PhotoImage(file='Bun.png')
+water_Button = Button(drinks_frame,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+water_Button.grid(row=1,column=0)
+water_Button = Button(drinks_frame, text='Water Bottle', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+water_Button.grid(row=1,column=1)
+water_Button = Button(drinks_frame,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+water_Button.grid(row=1,column=2)
 
-#chicken_burger_Label = Label(productsFrame, font=('Gilroy',15,'bold'), width=35, height=3, bd=0, relief=GROOVE, bg='navy', fg='snow')
-#chicken_burger_Label.place(x=5,y=5)
+ginger_tea_Logo = PhotoImage(file='Bun.png')
+ginger_tea_Button = Button(drinks_frame,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+ginger_tea_Button.grid(row=2,column=0)
+ginger_tea_Button = Button(drinks_frame, text='Ginger Tea', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+ginger_tea_Button.grid(row=2,column=1)
+ginger_tea_Button = Button(drinks_frame,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+ginger_tea_Button.grid(row=2,column=2)
 
-#chicken_burger_Label = Label(productarea, font=('Gilroy',15,'bold'), width=35, height=3, bd=0, relief=GROOVE, bg='navy', fg='snow')
-#chicken_burger_Label.place(x=5,y=450)
+# other section
+
+other_label = Label(other_frame, text='  Other', font=('Gilroy',13,'bold'), justify="left", anchor="w", width=45, height=2, bd=0, relief=GROOVE, bg='snow', fg='gray')
+other_label.grid(row=0, column=0, columnspan=3, sticky=W)
+
+rotti_Logo = PhotoImage(file='Bun.png')
+rotti_Button = Button(other_frame,image=bunLogo,font=('Gilroy',16,'bold'), width=90,height=80, bd=0, bg='gray', fg='snow', cursor='hand2')
+rotti_Button.grid(row=1,column=0)
+rotti_Button = Button(other_frame, text='Rotti', font=('Gilroy',15,'bold'), width=22, height=3, bd=0, relief=GROOVE, bg='snow', fg=Headfg, activeforeground='gray')
+rotti_Button.grid(row=1,column=1)
+rotti_Button = Button(other_frame,text='Remove',font=('Gilroy',12,'bold'), width=8,height=3, bd=0, bg='red', fg='snow', cursor='hand2')
+rotti_Button.grid(row=1,column=2)
 
 # set the scrollbar comparatively to the text
 scrollbar.config(command=mycanvas.yview)
+
+
+# -------Bill Area-------
+
+bill_area_Label = Label(dash_window, text='Bill Area', font=('Gilroy',15,'bold'), bd=0,relief=GROOVE, bg=Headbg, fg='snow')
+bill_area_Label.place(x=680,y=180)
+
+billFrame = Frame(dash_window, relief=GROOVE)
+billFrame.place(x=680,y=220)
+
+# to add a scrollbar, use 'Scrollbar()' class. Use orient to to make vertical or horizontal scrollbar
+scrollbar = Scrollbar(billFrame, orient=VERTICAL)
+scrollbar.pack(side=RIGHT, fill=Y)
+
+# to create a text area, use 'text()' class. To set the scrollbar with the text area, use 'yscrollcommand=scrollbar.set' command.
+textarea = Text(billFrame, height=25, width=45, yscrollcommand=scrollbar.set)
+textarea.pack()
+#set the scrollbar comparatively to the text
+scrollbar.config(command=textarea.yview)
+
+
+
+# total price
+cosmetic_price_Label = Label(dash_window, text='Total Price :', font=('Gilroy',15,'bold'), bd=0, relief=GROOVE, bg=Headbg, fg='snow')
+cosmetic_price_Label.place(x=700,y=645)
+cosmetic_price_Entry = Entry(dash_window, font=('arial', 15), bd=0, width=15)
+cosmetic_price_Entry.place(x=850,y=645)
+cosmetic_price_Label = Label(dash_window, text='Rs.', font=('Gilroy',14,'bold'), bd=0, relief=GROOVE, bg='white', fg=Headbg)
+cosmetic_price_Label.place(x=980,y=645)
 
 #scrollbar.config(command=l1.yview)
 
