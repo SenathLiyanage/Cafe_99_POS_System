@@ -1,4 +1,4 @@
-# Caffe-Login-Page
+# Cafe_99_POS_System
 
 ![Cafe99_mockup](https://github.com/SenathLiyanage/Cafe_99_POS_System/assets/99049759/111659d9-cd22-48f1-82ca-52bff9845d72)
 
